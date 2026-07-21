@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BotTrainer — Renu Sri J</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <a class="brand" href="../index.html">renu sri j <span class="mono">.ipynb</span></a>
+    <nav>
+      <a href="../index.html#projects">all projects</a>
+      <a href="../index.html#contact">contact</a>
+    </nav>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <a class="back-link" href="../index.html">← back to portfolio</a>
+
+  <section class="detail-hero reveal">
+    <div class="detail-tag mono">In [4.1]: project — 1 of 3</div>
+    <h1 class="detail-title">BotTrainer</h1>
+    <p class="detail-summary">An NLU + ML platform for building intelligent chatbots — create workspaces, upload a training dataset, train several classification algorithms side by side, and chat with the trained model to see live intent detection.</p>
+    <div class="detail-actions">
+      <a class="btn primary" href="https://github.com/renusrijeyapandiyan/NLUBOTTRAINER.git" target="_blank" rel="noopener">⌥ view on GitHub</a>
+      <a class="btn ghost" href="../index.html#projects">← other projects</a>
+    </div>
+  </section>
+
+  <div class="shot-frame reveal">
+    <div class="shot-bar"><span></span><span></span><span></span><span class="shot-url mono">localhost:3000</span></div>
+    <div class="shot-placeholder">
+      <img src="bottrainer-shots/landing.png" alt="NLU Studio landing page — build intelligent NLU and ML chatbots">
+    </div>
+    <div class="shot-caption mono">Landing — the platform's pitch: build, train, and deploy NLU + ML chatbots</div>
+  </div>
+
+  <div class="shot-frame reveal">
+    <div class="shot-bar"><span></span><span></span><span></span><span class="shot-url mono">localhost:3000/dashboard</span></div>
+    <div class="shot-placeholder">
+      <img src="bottrainer-shots/dashboard.png" alt="NLU Studio dashboard showing workspaces">
+    </div>
+    <div class="shot-caption mono">Dashboard — manage ML workspaces like "student bot" and "healthcarebot"</div>
+  </div>
+
+  <div class="shot-frame reveal">
+    <div class="shot-bar"><span></span><span></span><span></span><span class="shot-url mono">localhost:3000/workspace/2</span></div>
+    <div class="shot-placeholder">
+      <img src="bottrainer-shots/dataset-upload.png" alt="Dataset upload page supporting CSV, JSON, and YML formats">
+    </div>
+    <div class="shot-caption mono">Dataset Upload — upload CSV/JSON/YML training data per workspace</div>
+  </div>
+
+  <div class="shot-frame reveal">
+    <div class="shot-bar"><span></span><span></span><span></span><span class="shot-url mono">localhost:3000/workspace/2</span></div>
+    <div class="shot-placeholder">
+      <img src="bottrainer-shots/dataset-info.png" alt="Dataset information panel showing rows, columns and column names">
+    </div>
+    <div class="shot-caption mono">Dataset Info — row/column counts and a breakdown of every column</div>
+  </div>
+
+  <div class="shot-frame reveal">
+    <div class="shot-bar"><span></span><span></span><span></span><span class="shot-url mono">localhost:3000/workspace/2</span></div>
+    <div class="shot-placeholder">
+      <img src="bottrainer-shots/train-models.png" alt="Training configuration page for selecting classification algorithms">
+    </div>
+    <div class="shot-caption mono">Train Models — pick a problem type and select from Random Forest, XGBoost, SVM, and more</div>
+  </div>
+
+  <div class="shot-frame reveal">
+    <div class="shot-bar"><span></span><span></span><span></span><span class="shot-url mono">localhost:3000/workspace/2</span></div>
+    <div class="shot-placeholder">
+      <img src="bottrainer-shots/train-models-2.png" alt="Training configuration with multiple algorithms selected and a train button">
+    </div>
+    <div class="shot-caption mono">Multi-algorithm training — train several supervised models in one run</div>
+  </div>
+
+  <div class="shot-frame reveal">
+    <div class="shot-bar"><span></span><span></span><span></span><span class="shot-url mono">localhost:3000/workspace/2</span></div>
+    <div class="shot-placeholder">
+      <img src="bottrainer-shots/chatbot.png" alt="NLU chatbot chat interface showing intent detection with confidence scores">
+    </div>
+    <div class="shot-caption mono">NLU Chatbot — live chat interface showing detected intent and confidence per message</div>
+  </div>
+
+  <div class="detail-grid reveal">
+    <div>
+      <div class="detail-block">
+        <h3>The problem</h3>
+        <p>Training and testing a natural-language-understanding model usually means juggling notebooks, scripts, and separate dashboards. BotTrainer pulls that workflow into a single interactive web app, so queries can be entered, labelled, and evaluated in one place.</p>
+      </div>
+      <div class="detail-block">
+        <h3>What it does</h3>
+        <ul>
+          <li>Organizes projects into workspaces (e.g. "student bot", "healthcarebot")</li>
+          <li>Accepts CSV, JSON, or YML datasets, up to 100MB, and summarizes rows/columns automatically</li>
+          <li>Trains multiple supervised algorithms in one run — Random Forest, XGBoost, SVM, Logistic Regression, Decision Tree, KNN, Naive Bayes</li>
+          <li>Serves a RASA-powered chat interface that shows detected intent and confidence score per message</li>
+        </ul>
+      </div>
+      <div class="detail-block">
+        <h3>How it's built</h3>
+        <p>The front-end is a Next.js and React application written in TypeScript. Data is modelled with Drizzle ORM on top of Supabase, with a Node.js layer handling REST endpoints, and a Python service handling the NLU processing itself.</p>
+      </div>
+    </div>
+    <div>
+      <div class="side-card">
+        <h4>Tech stack</h4>
+        <div class="stack">
+          <span class="tag">Next.js</span><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Python</span><span class="tag">Drizzle ORM</span><span class="tag">Supabase</span><span class="tag">Node.js</span><span class="tag">REST APIs</span><span class="tag">Git</span>
+        </div>
+      </div>
+      <div class="side-card">
+        <h4>Links</h4>
+        <div class="project-links" style="flex-direction:column; gap:8px;">
+          <a href="https://github.com/renusrijeyapandiyan/NLUBOTTRAINER.git" target="_blank" rel="noopener">GitHub repository ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="reveal">
+    <div class="contact-title">Have questions about this build?</div>
+    <p class="contact-sub">Happy to walk through the architecture or the code.</p>
+    <div class="contact-links">
+      <a href="mailto:renusrijeyapandiyan@gmail.com">✉ renusrijeyapandiyan@gmail.com</a>
+      <a href="https://github.com/renusrijeyapandiyan" target="_blank" rel="noopener">⌥ github.com/renusrijeyapandiyan</a>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  const els = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('show'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  els.forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>

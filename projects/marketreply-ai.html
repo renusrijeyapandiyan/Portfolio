@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MarketReply AI — Renu Sri J</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <a class="brand" href="../index.html">renu sri j <span class="mono">.ipynb</span></a>
+    <nav>
+      <a href="../index.html#projects">all projects</a>
+      <a href="../index.html#contact">contact</a>
+    </nav>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <a class="back-link" href="../index.html">← back to portfolio</a>
+
+  <section class="detail-hero reveal">
+    <div class="detail-tag mono">In [4.2]: project — 2 of 3</div>
+    <h1 class="detail-title">MarketReply AI</h1>
+    <p class="detail-summary">A marketplace buyer-reply assistant — analyzes incoming buyer messages against a seller's own pricing and negotiation rules, then drafts context-aware replies automatically.</p>
+    <div class="detail-actions">
+      <a class="btn primary" href="https://github.com/renusrijeyapandiyan/marketreply-ai.git" target="_blank" rel="noopener">⌥ view on GitHub</a>
+      <a class="btn ghost" href="../index.html#projects">← other projects</a>
+    </div>
+  </section>
+
+  <div class="shot-frame reveal">
+    <div class="shot-bar"><span></span><span></span><span></span><span class="shot-url mono">marketreply-ai-frontend.onrender.com</span></div>
+    <div class="shot-placeholder">
+      <img src="marketreply-shots/home.png" alt="MarketReply AI home page — Gemini-powered buyer replies">
+    </div>
+    <div class="shot-caption mono">Home — the pitch and feature overview</div>
+  </div>
+
+  <div class="shot-frame reveal">
+    <div class="shot-bar"><span></span><span></span><span></span><span class="shot-url mono">marketreply-ai-frontend.onrender.com/dashboard</span></div>
+    <div class="shot-placeholder">
+      <img src="marketreply-shots/dashboard.png" alt="MarketReply AI dashboard showing conversation stats and quick actions">
+    </div>
+    <div class="shot-caption mono">Dashboard — snapshot of AI-assisted buyer conversations</div>
+  </div>
+
+  <div class="shot-frame reveal">
+    <div class="shot-bar"><span></span><span></span><span></span><span class="shot-url mono">marketreply-ai-frontend.onrender.com/seller-settings</span></div>
+    <div class="shot-placeholder">
+      <img src="marketreply-shots/seller-settings.png" alt="MarketReply AI seller settings page for managing pricing and negotiation rules">
+    </div>
+    <div class="shot-caption mono">Seller Settings — where pricing and negotiation rules are configured</div>
+  </div>
+
+  <div class="shot-frame reveal">
+    <div class="shot-bar"><span></span><span></span><span></span><span class="shot-url mono">marketreply-ai-frontend.onrender.com/analytics</span></div>
+    <div class="shot-placeholder">
+      <img src="marketreply-shots/analytics.png" alt="MarketReply AI analytics page showing intent distribution and rule compliance rate">
+    </div>
+    <div class="shot-caption mono">Analytics — intent distribution and rule-compliance rate</div>
+  </div>
+
+  <div class="detail-grid reveal">
+    <div>
+      <div class="detail-block">
+        <h3>The problem</h3>
+        <p>Sellers on online marketplaces get flooded with buyer negotiation messages, and manually checking each one against pricing rules is slow and inconsistent. MarketReply AI automates that first pass.</p>
+      </div>
+      <div class="detail-block">
+        <h3>What it does</h3>
+        <ul>
+          <li>Reads incoming buyer messages and checks them against seller-defined pricing and negotiation rules</li>
+          <li>Uses the Google Gemini API to auto-draft a context-aware reply</li>
+          <li>Supports multiple sellers with JWT-secured, isolated accounts</li>
+          <li>Maintains a live, browsable seller directory</li>
+        </ul>
+      </div>
+      <div class="detail-block">
+        <h3>How it's built</h3>
+        <p>The front-end is a React app built with Vite and styled with Tailwind CSS. The backend is a Spring Boot (Java) service backed by MongoDB Atlas, with JWT authentication securing each seller's account and REST APIs connecting the two layers.</p>
+      </div>
+    </div>
+    <div>
+      <div class="side-card">
+        <h4>Tech stack</h4>
+        <div class="stack">
+          <span class="tag">React</span><span class="tag">Vite</span><span class="tag">Tailwind CSS</span><span class="tag">Spring Boot</span><span class="tag">Java</span><span class="tag">MongoDB Atlas</span><span class="tag">Google Gemini API</span><span class="tag">JWT</span><span class="tag">REST APIs</span><span class="tag">Git</span>
+        </div>
+      </div>
+      <div class="side-card">
+        <h4>Links</h4>
+        <div class="project-links" style="flex-direction:column; gap:8px;">
+          <a href="https://github.com/renusrijeyapandiyan/marketreply-ai.git" target="_blank" rel="noopener">GitHub repository ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="reveal">
+    <div class="contact-title">Have questions about this build?</div>
+    <p class="contact-sub">Happy to walk through the architecture or the code.</p>
+    <div class="contact-links">
+      <a href="mailto:renusrijeyapandiyan@gmail.com">✉ renusrijeyapandiyan@gmail.com</a>
+      <a href="https://github.com/renusrijeyapandiyan" target="_blank" rel="noopener">⌥ github.com/renusrijeyapandiyan</a>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  const els = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('show'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  els.forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
