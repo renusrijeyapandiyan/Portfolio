@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LinguaBridge AI — Renu Sri J</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <a class="brand" href="../index.html">renu sri j <span class="mono">.ipynb</span></a>
+    <nav>
+      <a href="../index.html#projects">all projects</a>
+      <a href="../index.html#contact">contact</a>
+    </nav>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <a class="back-link" href="../index.html">← back to portfolio</a>
+
+  <section class="detail-hero reveal">
+    <div class="detail-tag mono">In [4.5]: project — 5 of 5</div>
+    <span class="live-badge"><span class="dot"></span>Live</span>
+    <h1 class="detail-title">LinguaBridge AI</h1>
+    <p class="detail-summary">A multilingual chat assistant — write in whatever language feels natural, and LinguaBridge detects it and replies in kind, no manual language switching required.</p>
+    <div class="detail-actions">
+      <a class="btn primary" href="https://linguabridgeai.onrender.com" target="_blank" rel="noopener">▶ visit live site</a>
+      <a class="btn" href="https://github.com/renusrijeyapandiyan/LINGUABRIDGE-AI" target="_blank" rel="noopener">⌥ view on GitHub</a>
+      <a class="btn ghost" href="../index.html#projects">← other projects</a>
+    </div>
+    <p class="cred-note">⏳ Hosted on Render's free tier — the first load after inactivity can take 30–60 seconds to spin up.</p>
+  </section>
+
+  <div class="shot-frame reveal">
+    <div class="shot-bar"><span></span><span></span><span></span><span class="shot-url mono">linguabridgeai.onrender.com</span></div>
+    <div class="shot-placeholder">
+      <img src="linguabridge-shots/signin.png" alt="LinguaBridge AI sign in and create account page">
+    </div>
+    <div class="shot-caption mono">Sign in — "Any language, one conversation." Accounts sync history across devices</div>
+  </div>
+
+  <div class="shot-frame reveal">
+    <div class="shot-bar"><span></span><span></span><span></span><span class="shot-url mono">linguabridgeai.onrender.com</span></div>
+    <div class="shot-placeholder">
+      <img src="linguabridge-shots/empty-chat.png" alt="Empty LinguaBridge chat screen prompting the user to say hello in any language">
+    </div>
+    <div class="shot-caption mono">New chat — "Say hello, in any language." No language picker needed</div>
+  </div>
+
+  <div class="shot-frame reveal">
+    <div class="shot-bar"><span></span><span></span><span></span><span class="shot-url mono">linguabridgeai.onrender.com</span></div>
+    <div class="shot-placeholder">
+      <img src="linguabridge-shots/multilingual-chat.png" alt="Chat conversation switching between English and Mongolian with detected language labels">
+    </div>
+    <div class="shot-caption mono">Live detection — the assistant replies in Mongolian, English, and more, each message tagged with the detected language</div>
+  </div>
+
+  <div class="detail-grid reveal">
+    <div>
+      <div class="detail-block">
+        <h3>The problem</h3>
+        <p>Most chat assistants force a single working language or require manually switching a settings toggle. LinguaBridge removes that friction entirely — the model figures out what language you're writing in and just responds in kind.</p>
+      </div>
+      <div class="detail-block">
+        <h3>Key features</h3>
+        <div class="feature-grid">
+          <div class="feature-item"><span class="fi-mark">▸</span>Automatic language detection per message</div>
+          <div class="feature-item"><span class="fi-mark">▸</span>Replies generated in the same detected language</div>
+          <div class="feature-item"><span class="fi-mark">▸</span>Supports a wide range of languages — English, Hindi, Japanese, Mongolian, and more</div>
+          <div class="feature-item"><span class="fi-mark">▸</span>Account-based auth with conversation history synced across devices</div>
+          <div class="feature-item"><span class="fi-mark">▸</span>Each message tagged with its detected language for transparency</div>
+        </div>
+      </div>
+      <div class="detail-block">
+        <h3>My role</h3>
+        <p>Built the full stack solo — the React/Vite front-end, the Express/Node.js API, MongoDB for user accounts and conversation history, JWT + bcrypt authentication, and the Gemini API integration that handles both language detection and generating the in-language reply.</p>
+      </div>
+      <div class="detail-block">
+        <h3>Challenges &amp; what I learned</h3>
+        <p>Getting reliable language detection for short, informal messages (a single word or slang phrase) was trickier than expected — the model sometimes needed conversational context, not just the latest message, to detect correctly. I ended up passing recent chat history into the detection step, which noticeably improved accuracy on short inputs.</p>
+      </div>
+    </div>
+    <div>
+      <div class="side-card">
+        <h4>Tech stack</h4>
+        <div class="stack">
+          <span class="tag">React</span><span class="tag">Vite</span><span class="tag">Tailwind CSS</span><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">MongoDB</span><span class="tag">JWT</span><span class="tag">bcrypt</span><span class="tag">Google Gemini API</span><span class="tag">Git</span><span class="tag">Render</span>
+        </div>
+      </div>
+      <div class="side-card">
+        <h4>Links</h4>
+        <div class="project-links" style="flex-direction:column; gap:8px;">
+          <a href="https://linguabridgeai.onrender.com" target="_blank" rel="noopener">Live site ↗</a>
+          <a href="https://github.com/renusrijeyapandiyan/LINGUABRIDGE-AI" target="_blank" rel="noopener">GitHub repository ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="reveal">
+    <div class="contact-title">Have questions about this build?</div>
+    <p class="contact-sub">Happy to walk through the architecture or the code.</p>
+    <div class="contact-links">
+      <a href="mailto:renusrijeyapandiyan@gmail.com">✉ renusrijeyapandiyan@gmail.com</a>
+      <a href="https://github.com/renusrijeyapandiyan" target="_blank" rel="noopener">⌥ github.com/renusrijeyapandiyan</a>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  const els = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('show'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  els.forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
